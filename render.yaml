@@ -1,0 +1,93 @@
+# Render Blueprint: деплой всех 10 демо-клонов одной кнопкой.
+# Каждый сервис — независимое Node-приложение из своего репозитория.
+
+services:
+  - type: web
+    name: demo-monkeytype
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-monkeytype
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-discord
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-discord
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-notion
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-notion
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: clone-spotify-demo
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-spotify
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-excalidraw
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-excalidraw
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-jira
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-jira
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-reddit
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-reddit
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-splitwise
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-splitwise
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-pastebin
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-pastebin
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: demo-calendly
+    runtime: node
+    repo: https://github.com/Snowxdxaxd/clone-calendly
+    branch: main
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
